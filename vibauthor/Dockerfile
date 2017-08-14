@@ -3,7 +3,7 @@ MAINTAINER tcely <tcely@users.noreply.github.com>
 
 WORKDIR /root
 RUN yum -y update && \
-    curl -v -R -L -O 'https://raw.githubusercontent.com/tcely/docker-vibauthor/master/mirror/vmware-esx-vib-author-5.0.0-0.0.847598.i386.rpm' && \
+    curl -v -R -L -O 'https://github.com/tcely/docker-vibauthor/raw/master/mirror/vmware-esx-vib-author-5.0.0-0.0.847598.i386.rpm' && \
     yum -y install vmware-esx-vib-author-*.rpm && \
     yum clean all
 WORKDIR /data
