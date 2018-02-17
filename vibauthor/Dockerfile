@@ -1,5 +1,5 @@
 FROM centos:6
-MAINTAINER tcely <tcely@users.noreply.github.com>
+LABEL maintainer="https://keybase.io/tcely"
 
 WORKDIR /root
 RUN yum -y update && \
